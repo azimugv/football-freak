@@ -1,0 +1,222 @@
+body {
+    margin: 0 auto;
+    max-width: 1280;
+}
+
+/* Hero Banner Start */
+.hero-banner {
+    margin: 20px 40px;
+    padding: 20px 40px 0px 40px;
+    border-radius: 30px;
+    background-color: black;
+    display: flex;
+    overflow: hidden;
+}
+
+.hero-text {
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.hero-title {
+    font-size: 80px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.hero-description {
+    font-size: 16px;
+    font-weight: 100;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.hero-btn {
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero-btn span {
+    margin-left: 5px;
+}
+
+.hero-image {
+    width: 50%;
+    position: relative;
+}
+
+.hero-image img {
+    padding-left: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* Hero Banner End */
+
+/* Section Two  Start */
+
+.section-two {
+    display: flex;
+    margin: 20px 40px;
+}
+
+.nav-items {
+    min-width: 300px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 7px;
+}
+
+#blog {
+    background-color: red;
+    color: #fff;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.blog {
+    border: 0.5px solid gray;
+    border-radius: 5px;
+}
+
+.blog img {
+    width: 100%;
+}
+
+.blog-info {
+    margin-left: 20px;
+}
+
+.transfer-btn a {
+    text-decoration: none;
+    padding: 5px;
+    color: #2b2b2b;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+}
+
+.blog-icons span,
+.blog-icons span i {
+    padding-right: 10px;
+}
+
+.goal {
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 30px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    margin: 0px;
+    padding: 30px;
+}
+
+footer p a {
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;
+    padding: 10px;
+}
+
+/* Media Queries */
+@media only screen and (min-width:481px) and (max-width: 768px) {
+
+    .section-two {
+        flex-direction: column;
+    }
+
+    .nav-items {
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    .nav-item a {
+        border: 1px solid gray;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .hero-banner {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 10px 0px 10px;
+    }
+
+    .hero-text {
+        margin-bottom: 400px;
+    }
+
+    .hero-title {
+        font-size: 40px;
+    }
+
+    .hero-image img {
+        padding-left: 40px;
+
+    }
+
+    .section-two {
+        flex-direction: column;
+    }
+
+    .nav-items {
+        height: 100%;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    .nav-item a {
+        border: 1px solid gray;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+}
